@@ -1,0 +1,258 @@
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+		url('../fonts/Gilroy-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-SemiBold.woff2') format('woff2'),
+		url('../fonts/Gilroy-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+		url('../fonts/Gilroy-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+		url('../fonts/Gilroy-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+
+/* Обнуляющий стиль */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+ol li,
+ul li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+	font-size: 14px;
+	line-height: 1;
+	font-family: Gilroy, sans-serif;
+	color: #ffffff;
+}
+
+/* -------------- */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	background-color: #111428;
+}
+
+.container {
+	max-width: 1110px;
+	margin: 0 auto;
+}
+
+
+
+
+.block-1 {
+	padding: 30px 0;
+	text-align: center;
+}
+
+.title-form {
+	margin: 0 0 11px 0;
+	font-weight: bold;
+	font-size: 38px;
+	line-height: 46px;
+	text-align: center;
+}
+
+.description {
+	margin: 0 0 40px 0;
+	color: #64B369;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+
+.form {
+	/* padding: 10px; */
+	margin: 0 auto 50px;
+	text-align: center;
+	max-width: 386px;
+}
+
+.form__item {
+	margin: 0 0 30px 0;
+}
+
+.input {
+	max-width: 384px;
+	min-height: 50px;
+	width: 100%;
+	margin: 0 0 32px 0;
+	border-radius: 5px;
+	padding: 0 20px;
+
+}
+
+.text-return {
+	margin: 0 0 29px 0;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	padding: 0 0 0 36px;
+	position: relative;
+	text-align: left;
+}
+
+.text-return::before {
+	position: absolute;
+	content: "";
+	background: url('../img/arrow-left.svg') no-repeat center/cover;
+	width: 20px;
+	height: 20px;
+	top: 0;
+	left: 0;
+	display: inline-block;
+}
+
+
+
+.btn-form {
+
+	width: 100%;
+	min-height: 50px;
+	margin: 0 0 24px 0;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	color: #FFFFFF;
+	background-color: #337AB7;
+	border-radius: 5px;
+}
+
+.text-note {
+	max-width: 311px;
+	margin: 0 auto 32px 0;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #AEAEAE;
+	text-align: left;
+}
+
+.text-ask {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	margin: 0 8px 0 0;
+}
+
+.link {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #64B369;
+}
+
+.checkbox {
+	position: relative;
+	/* padding: 0 0 0 20px; */
+	text-align: left;
+}
+
+.checkbox__item {
+	display: none;
+}
+
+.checkbox__label {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: left;
+	position: relative;
+	padding: 0 0 0 30px;
+	display: inline-block;
+	margin: 0 auto 0 0;
+}
+
+.checkbox__label::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+}
+
+.link__checkbox {
+	margin: 0 0 0 72px;
+}
+
+.checkbox__label::after {
+	content: "";
+	width: 12px;
+	height: 12px;
+	border-radius: 5px;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	/* background-color: #07065a;
+	opacity: 0;
+	visibility: hidden;
+	transition: 100ms; */
+}
+
+.checkbox__item:checked+.checkbox__label::after {
+	background-color: #337AB7;
+	/* opacity: 1;
+	visibility: visible; */
+}

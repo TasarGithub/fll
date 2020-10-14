@@ -1,0 +1,175 @@
+/* Обнуляющий стиль */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+ol li,
+ul li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+	font-size: 14px;
+	line-height: 1;
+}
+
+/* -------------- */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1110px;
+	margin: 0 auto;
+}
+
+
+.title {
+	margin: 0 0 20px 0;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 33px;
+	color: #00293F
+}
+
+.paragraph {
+	margin: 0 0 20px 0;
+}
+
+
+.blog {
+	font-family: Poppins, sans-serif;
+}
+
+.blog-title {
+	margin: 0 0 47px 0;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 60px;
+}
+
+
+
+.blog-img {
+	border: 1px solid #DCDCDC;
+	border-radius: 3px;
+	margin: 0 30px 0 0;
+	max-width: 635px;
+	max-height: 345px;
+	display: inline-block;
+}
+
+.blog-img img {
+	width: 100%;
+	max-height: 345px;
+}
+
+.blog-item {
+	display: inline-block;
+	max-width: 409px;
+	margin: 15px 0 0 0;
+}
+
+.blog-item .category {
+	margin: 0 0 25px 0;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 21px;
+	text-transform: uppercase;
+	color: #5A5A5A;
+}
+
+.blog-item .title {
+	margin: 0 0 20px 0;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 42px;
+}
+
+.blog-item .description {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0 0 19px 0;
+}
+
+.blog-item.bottom {}
+
+.date,
+.watch,
+.comments {
+	margin: 0 30px 0 0;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 19px
+}
+
+.date::before {
+	display: inline-block;
+	content: "";
+	width: 15px;
+	height: 13px;
+	background: url('../img/icon-date.svg') no-repeat center/contain;
+	margin: 0 5px -1px 0;
+}
+
+.watch::before {
+	display: inline-block;
+	content: "";
+	width: 17px;
+	height: 12px;
+	background: url('../img/icon-watch.svg') no-repeat center/cover;
+	margin: 0 5px -1px 0;
+}
+
+.comments {
+	margin: 0 0 0 0;
+}
+
+.comments::before {
+	display: inline-block;
+	content: "";
+	width: 16px;
+	height: 16px;
+	background: url('../img/icon-comments.svg') no-repeat center/cover;
+	margin: 0 5px -3px 0;
+}

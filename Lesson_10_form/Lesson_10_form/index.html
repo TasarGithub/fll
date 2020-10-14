@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,regular,500,500italic,600,700,800&display=swap"
+		rel="stylesheet" />
+
+
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,italic,500&display=swap&subset=cyrillic-ext"
+		rel="stylesheet" />
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<title> Урок №10 form</title>
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<div class="container">
+
+
+			<div class="block-1">
+				<h2 class="title-form">
+					Восстановление пароля
+				</h2>
+				<form action="" class="form">
+					<p class="description">Введите Email, на него будет выслан новый пароль</p>
+
+					<div class="form__item">
+						<input type="text" name="form[]" class="input" autocomplete="off">
+					</div>
+
+					<p class="text-return">Вернуться в форму авторизации</p>
+
+					<button class="btn-form" type="submit">Отправить</button>
+
+					<p class="text-note">* Если вы не получили письмо с паролем, проверьте папку Спам.</p>
+
+					<span class="text-ask">У вас нет аккаунта?</span>
+					<a href="№" class="link">Регистрация</a>
+				</form>
+				<!--/. form-pass -->
+
+
+
+			</div>
+			<!-- /.block-1 -->
+
+
+			<div class="block-2">
+				<h2 class="title-form">
+					Вход
+				</h2>
+				<form action="" class="form">
+
+					<div class="form__item">
+						<input type="email" placeholder="Почта*" name="email" required class="input">
+					</div>
+					<div class="form__item">
+						<input type="password" placeholder="Пароль*" required class="input">
+					</div>
+					<div class="form__item">
+						<div class="checkbox">
+							<input id="checkRemeber" name="form[]" value="" class="checkbox__item" type="checkbox">
+							<label class="checkbox__label" for="checkRemeber">Запомнить меня</label>
+
+							<a href="№" class="link link__checkbox">Забыли пароль?</a>
+						</div>
+						<!--/. checkbox -->
+
+					</div>
+					<!-- /.form__item -->
+					<button class="btn-form" type="submit">Войти</button>
+
+
+					<span class="text-ask">У вас нет аккаунта?</span>
+					<a href="№" class="link">Регистрация</a>
+				</form>
+				<!--/. form-pass -->
+
+
+
+			</div>
+			<!-- /.block-1 -->
+
+			<div class="block-3">
+				<h2 class="title-form">
+					Регистрация
+				</h2>
+				<form action="" class="form-registration">
+
+					<div class="form__item">
+						<input type="email" placeholder="Почта*" name="email" required class="input">
+					</div>
+					<div class="form__item">
+						<input type="password" placeholder="Пароль*" required class="input">
+					</div>
+					<div class="form__item">
+						<div class="checkbox">
+							<input id="checkRemeber" name="form[]" value="1" class="checkbox__item" type="checkbox">
+							<label class="checkbox__label" for="checkRemeber">Запомнить меня</label>
+						</div>
+						<!--/. checkbox -->
+
+						<input type="checkbox" class="checkbox" id="checkbox">
+						<label for=""></label>
+					</div>
+					<!-- /.form__item -->
+					<button class="btn-form">Войти</button>
+
+
+					<span class="text-ask">У вас нет аккаунта?</span>
+					<a href="№" class="link">Регистрация</a>
+				</form>
+				<!--/. form-pass -->
+
+
+
+			</div>
+			<!-- /.block-3 -->
+
+
+		</div>
+		<!-- /.container -->
+
+	</div>
+	<!-- /. wrapper -->
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- &display=swap&subset=cyrillic-ext -->
+	<link rel="stylesheet" href="css/style.css">
+	<title>Урок №10</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<form class="form" method="GET" enctype="multipart/form-data" action="#">
+			<!-- select -->
+			<div class="form__item">
+				<select name="form[]" class="select">
+					<option value="3">Пункт №3</option>
+					<option value="1">Пункт №1</option>
+					<option value="2">Пункт №2</option>
+					<option value="4">Пункт №4</option>
+				</select>
+			</div>
+
+			<!-- file__input -->
+			<div class="form__item">
+				<div class="file">
+					<input class="file__input" accept=".jpg, .jpeg, .png" type="file">
+					<div class="file__label">Выбрать файл</div>
+				</div>
+			</div>
+			<!-- radio options -->
+			<div class="form__item">
+				<div class="form__label">Пол:</div>
+				<div class="options">
+					<div class="options__item">
+						<input checked id="radioMale" name="sex" value="male" class="options__input" type="radio">
+						<label class="options__label" for="radioMale">Мужской</label>
+					</div>
+					<div class="options__item">
+						<input id="radioFemale" name="sex" value="female" class="options__input" type="radio">
+						<label class="options__label" for="radioFemale">Женский</label>
+					</div>
+				</div>
+			</div>
+			<!-- checkbox -->
+			<div class="form__item">
+				<div class="checkbox">
+					<input id="checkCar" name="form[]" value="1" class="checkbox__item" type="checkbox">
+					<label class="checkbox__label" for="checkCar">Есть тачка? Lorem ipsum dolor sit, amet consectetur adipisicing
+						elit. Accusantium aspernatur reiciendis ullam ipsum? Veritatis doloremque quaerat, nisi provident deserunt
+						minus dolorem! Error, inventore in architecto magni praesentium iste fugit sit!</label>
+				</div>
+			</div>
+			<!-- input Имя -->
+			<div class="form__item">
+				<label class="form__label" for="username">Имя:</label>
+				<input maxlength="3" minlength="1" required id="username" tabindex="1" autocomplete="off" name="form[]"
+					value="Жека" placeholder="Введите имя" class="input" type="text">
+			</div>
+			<!-- input email -->
+			<div class="form__item">
+				<label class="form__label" for="useremail">E-mail:</label>
+				<input id="useremail" tabindex="5" autocomplete="off" name="form[]" value="" placeholder="Введите email"
+					class="input" type="email">
+			</div>
+			<!-- input telephon -->
+			<div class="form__item">
+				<input tabindex="4" autocomplete="off" name="form[]" value="" placeholder="Введите телефон" class="input"
+					type="tel">
+			</div>
+			<!-- input number -->
+			<div class="form__item">
+				<input tabindex="2" autocomplete="off" name="form[]" value="" placeholder="Введите число" class="input"
+					type="number">
+			</div>
+			<!-- input password -->
+			<div class="form__item">
+				<input tabindex="3" autocomplete="off" name="form[]" value="" placeholder="Введите пароль" class="input"
+					type="password">
+			</div>
+			<!-- checkSmoke -->
+			<div class="form__item">
+				<input id="checkSmoke" name="form[]" value="1" class="" type="checkbox">
+				<label class="form__label" for="checkSmoke">Куришь?</label>
+			</div>
+			<!-- radio -->
+			<div class="form__item">
+				<div class="form__label">Статус:</div>
+				<input checked id="statusFree" name="status" value="free" class="" type="radio">
+				<label class="form__label" for="statusFree">Свободен(на)</label>
+
+				<input id="statusBusy" name="status" value="busy" class="" type="radio">
+				<label class="form__label" for="statusBusy">Занят(а)</label>
+
+				<input id="status123" name="status" value="123" class="" type="radio">
+				<label class="form__label" for="status123">В отношениях</label>
+			</div>
+			<!-- textarea -->
+			<div class="form__item">
+				<label class="form__label" for="message">Сообщение</label>
+				<textarea class="input" id="message" name="message"></textarea>
+			</div>
+			<!-- buttons submit reset -->
+			<div class="form__item">
+				<button class="button" autofocus type="submit"><span>Отправить</span></button>
+				<button type="reset">Очистить</button>
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>

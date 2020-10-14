@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,regular,500,500italic,600,700,800&display=swap"
+		rel="stylesheet" />
+
+
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,italic,500&display=swap&subset=cyrillic-ext"
+		rel="stylesheet" />
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<title> Урок №11 BEM</title>
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+
+		<div class="header wrapper__header">
+			<div class="_container">
+				<div class="header-top header__header-top">
+					<div class="logo header__logo">
+						<span class="logo__symbol-logo">OFDR</span>
+						<span class="logo__vertical-line"></span>
+						<p class="logo__text">центр профессиональной дистанционной переподготовки кадров</p>
+					</div>
+					<!-- /.logo header__logo -->
+					<div class="socnet header__socnet">
+						<div class="whatsapp socnet__item"></div>
+						<div class="viber socnet__item"></div>
+						<div class="telegram socnet__item"></div>
+					</div>
+					<!-- /.socnet header__socnet -->
+					<div class="contacts header__contacts">
+						<div class="telephon-email telephon-email__contacts">
+							<span class="telephon">8 800 000-00-00</span>
+							<span class="email">email@email.com</span>
+						</div>
+						<a href="" class="callback contacts__callback">Заказать звонок</a>
+					</div>
+					<!-- /.contacts header__contacts -->
+				</div>
+				<!-- /.header-top header__header-top -->
+				<div class="header-bottom header__header-bottom">
+					<nav class="nav nav__header-bottom">
+						<ul class="nav">
+							<li class="nav__item"><a href="" class="nav__link">Курсы</a></li>
+							<li class="nav__item"><a href="" class="nav__link">Аттестация</a></li>
+							<li class="nav__item"><a href="" class="nav__link">Охрана труда</a></li>
+							<li class="nav__item"><a href="" class="nav__link">Пожарная безопасность</a></li>
+							<li class="nav__item"><a href="" class="nav__link">Свидетельство допог</a></li>
+							<li class="nav__item"><a href="" class="nav__link">Права на спецтехнику</a></li>
+						</ul>
+					</nav>
+					<!-- /.nav__header -->
+				</div>
+				<!-- /.header-bottom header__header-bottom -->
+			</div>
+
+		</div>
+		<!-- /.header hero__header -->
+		<div class="hero">
+			<div class="hero__container _container">
+
+				<div class="hero__text">
+					<h1 class="hero__title">Оформление допусков, удостоверений всех строительных и рабочих специальностей</h1>
+					<p class="hero_subtitle">
+						<span class="hero__subtitle-part1">аттестация ИТР</span>
+						<span class="hero__subtitle-price">от 2 500 руб</span>
+					</p>
+				</div>
+				<!-- /.hero__text -->
+				<div class="hero__img">
+					<img src="img/men.png" alt="Фото специалиста">
+				</div>
+
+
+			</div>
+			<!-- /.hero__container _container -->
+		</div>
+		<!-- /.hero -->
+
+		<div class="what-documents">
+			<div class="what-documents__container _container">
+				<h2 class="h2 what-documents__h2">
+					Какие документы хотите оформить?
+				</h2>
+				<div class="document what-documents__document">
+					<div class="document__img">
+						<img src="img/ofd/documents/fireman.svg" alt="Гражданская оборона и ЧС">
+					</div>
+					<p class="document__text">Гражданская<br>оборона и ЧС</p>
+				</div>
+				<div class="document what-documents__document">
+					<div class="document__img">
+						<img src="img/ofd/documents/crane.svg" alt="Работы на высоте">
+					</div>
+					<p class="document__text">Работы <br> на высоте</p>
+				</div>
+				<div class="document what-documents__document">
+					<div class="document__img">
+						<img src="img/ofd/documents/excavator.svg" alt="Дорожно-строительная техника">
+					</div>
+					<p class="document__text"> Дорожно- <br>
+						строительная техника </p>
+				</div>
+				<div class="document what-documents__document">
+					<div class="document__img">
+						<img src="img/ofd/documents/settings.svg" alt="Неразрушающий контроль">
+					</div>
+					<p class="document__text">Неразрушающий <br>
+						контроль</p>
+				</div>
+
+				<!-- 2строка -->
+				<div class="document what-documents__document">
+					<div class="document__img">
+						<img src="img/ofd/documents/toxic-waste.svg" alt="Опасные грузы
+(ДОПОГ)">
+					</div>
+					<p class="document__text">Опасные грузы <br>
+						(ДОПОГ)</p>
+				</div>
+				<div class="document what-documents__document">
+					<div class="document__img">
+						<img src="img/ofd/documents/worker.svg" alt="Охрана труда">
+					</div>
+					<p class="document__text">Охрана труда</p>
+				</div>
+				<div class="document what-documents__document">
+					<div class="document__img">
+						<img src="img/ofd/documents/fire-extinguisher.svg" alt="Пожарно-технический минимум">
+					</div>
+					<p class="document__text"> Пожарно-технический <br> минимум </p>
+				</div>
+				<div class="document what-documents__document">
+					<div class="document__img">
+						<img src="img/ofd/documents/factory.svg" alt="Промышленная безопасность">
+					</div>
+					<p class="document__text">Промышленная <br> безопасность</p>
+				</div>
+
+				<!-- 3строка -->
+				<div class="document what-documents__document">
+					<div class="document__img">
+						<img src="img/ofd/documents/engineer.svg" alt="Обучение по рабочим профессиям">
+					</div>
+					<p class="document__text">Обучение по рабочим <br> профессиям</p>
+				</div>
+				<div class="document what-documents__document">
+					<div class="document__img">
+						<img src="img/ofd/documents/plug.svg" alt="Энергетическая безопасность">
+					</div>
+					<p class="document__text">Энергетическая <br> безопасность</p>
+				</div>
+				<div class="document what-documents__document">
+					<div class="document__img">
+						<img src="img/ofd/documents/curve.svg" alt="Безопасность 
+дорожного движения">
+					</div>
+					<p class="document__text"> Безопасность <br>
+						дорожного движения </p>
+				</div>
+				<div class="document what-documents__document">
+					<div class="document__img">
+						<img src="img/ofd/documents/tracktor.svg" alt="Права на 
+спецтехнику">
+					</div>
+					<p class="document__text">Права на <br>
+						спецтехнику</p>
+				</div>
+			</div>
+			<!-- /.what-documents__container _container -->
+		</div>
+		<!-- /. what-documents -->
+
+
+		<div class="advantages">
+			<div class="advantages__container _container">
+				<div class="advantages__item">
+					<div class="advantages__img">
+						<img src="img/ofd/advantages/Shape.svg" alt="Документы в срок">
+					</div>
+					<p class="advantages__text">
+						<span class="advantages__title">Документы в срок
+						</span>
+						<span class="advantages__description">Мы четко соблюдаем сроки, так как дорожим вашим временем</span>
+					</p>
+				</div>
+				<!-- /.advantages__item item-advantages -->
+
+				<div class="advantages__item">
+					<div class="advantages__img">
+						<img src="img/ofd/advantages/Star.svg" alt="100% качество наших услуг">
+					</div>
+					<p class="advantages__text">
+						<span class="advantages__title">100% качество <br>
+							наших услуг
+						</span>
+						<span class="advantages__description">Мы несем полную <br> ответственность за свою <br>работу</span>
+					</p>
+				</div>
+				<!-- /.advantages__item item-advantages -->
+				<div class="advantages__item">
+					<div class="advantages__img">
+						<img src="img/ofd/advantages/file.svg" alt="Гарантия подлинности документов">
+					</div>
+					<p class="advantages__text">
+						<span class="advantages__title">Гарантия подлинности <br> документов
+						</span>
+						<span class="advantages__description">У нас есть все <br> необходимые лицензии <br>
+							и сертификаты</span>
+					</p>
+				</div>
+				<!-- /.advantages__item item-advantages -->
+
+				<div class="advantages__item">
+					<div class="advantages__img">
+						<img src="img/ofd/advantages/delivery-truck.svg" alt="Гарантия быстрой доставки по всей России.">
+					</div>
+					<p class="advantages__text">
+						<span class="advantages__title">Гарантия быстрой доставки по всей России.
+						</span>
+						<span class="advantages__description">Доставляем в любой город России</span>
+					</p>
+				</div>
+				<!-- /.advantages__item item-advantages -->
+				<!--/. advantages__container _container -->
+			</div>
+			<!--/. advantages__container _container -->
+		</div>
+		<!-- /.advantages -->
+
+		<div class="education">
+			<div class="education__container _container">
+				<h2 class="h2 education__h2">Образовательные программы</h2>
+
+				<div class="education__item item-education">
+					<div class="education__img">
+						<img src="img/ofd/education/foto-1.png" alt="foto-1">
+					</div>
+					<p class="education__text">
+						<span class="education__description">Пожарно-технический минимум (учреждения-офисы, организации)</span>
+						<span class="education__status">Группа открыта</span>
+						<span class="education__price">от 2500 руб.</span>
+					</p>
+				</div>
+				<!-- /.education__item item-education -->
+				<div class="education__item item-education">
+					<div class="education__img">
+						<img src="img/ofd/education/foto-2.png" alt="foto-1">
+					</div>
+					<p class="education__text">
+						<span class="education__description">Пожарно-технический минимум (учреждения-офисы, организации)</span>
+						<span class="education__status">Группа открыта</span>
+						<span class="education__price">от 2500 руб.</span>
+					</p>
+				</div>
+				<!-- /.education__item item-education -->
+				<div class="education__item item-education">
+					<div class="education__img">
+						<img src="img/ofd/education/foto-3.png" alt="foto-1">
+					</div>
+					<p class="education__text">
+						<span class="education__description">Пожарно-технический минимум (учреждения-офисы, организации)</span>
+						<span class="education__status">Группа открыта</span>
+						<span class="education__price">от 2500 руб.</span>
+					</p>
+				</div>
+				<!-- /.education__item item-education -->
+				<div class="education__item item-education">
+					<div class="education__img">
+						<img src="img/ofd/education/foto-4.png" alt="foto-1">
+					</div>
+					<p class="education__text">
+						<span class="education__description">Пожарно-технический минимум (учреждения-офисы, организации)</span>
+						<span class="education__status">Группа открыта</span>
+						<span class="education__price">от 2500 руб.</span>
+					</p>
+				</div>
+				<!-- /.education__item item-education -->
+			</div>
+			<!-- /.education__container _container -->
+		</div>
+
+		<div class="news">
+			<div class="news__container _container">
+				<h2 class="h2 news__h2">
+					Новости
+				</h2>
+				<div class="news__item">
+					<div class="news__img">
+						<img src="img/ofd/news/foto-1.png" alt="news foto-1">
+					</div>
+					<p class="news__date">02.03.2019</span>
+					<h3 class="news__title">Изменения в системе гражданской обороны </h3>
+					<p class="news__description">Государство планирует реализовать значительные улучшения в сфере…</p>
+				</div>
+				<!--/. news__item -->
+				<div class="news__item">
+					<div class="news__img">
+						<img src="img/ofd/news/foto-2.png" alt="news foto-1">
+					</div>
+					<p class="news__date">02.03.2019</span>
+					<h3 class="news__title">Изменения в системе гражданской обороны </h3>
+					<p class="news__description">Государство планирует реализовать значительные улучшения в сфере…</p>
+				</div>
+				<!--/. news__item -->
+				<div class="news__item">
+					<div class="news__img">
+						<img src="img/ofd/news/foto-3.png" alt="news foto-1">
+					</div>
+					<p class="news__date">02.03.2019</span>
+					<h3 class="news__title">Изменения в системе гражданской обороны </h3>
+					<p class="news__description">Государство планирует реализовать значительные улучшения в сфере…</p>
+				</div>
+				<!--/. news__item -->
+				<div class="news__item">
+					<div class="news__img">
+						<img src="img/ofd/news/foto-4.png" alt="news foto-1">
+					</div>
+					<p class="news__date">02.03.2019</span>
+					<h3 class="news__title">Изменения в системе гражданской обороны </h3>
+					<p class="news__description">Государство планирует реализовать значительные улучшения в сфере…</p>
+				</div>
+				<!--/. news__item -->
+
+				<!-- 2строка -->
+				<div class="news__item">
+					<div class="news__img">
+						<img src="img/ofd/news/foto-1.png" alt="news foto-1">
+					</div>
+					<p class="news__date">02.03.2019</span>
+					<h3 class="news__title">Изменения в системе гражданской обороны </h3>
+					<p class="news__description">Государство планирует реализовать значительные улучшения в сфере…</p>
+				</div>
+				<!--/. news__item -->
+				<div class="news__item">
+					<div class="news__img">
+						<img src="img/ofd/news/foto-2.png" alt="news foto-1">
+					</div>
+					<p class="news__date">02.03.2019</span>
+					<h3 class="news__title">Изменения в системе гражданской обороны </h3>
+					<p class="news__description">Государство планирует реализовать значительные улучшения в сфере…</p>
+				</div>
+				<!--/. news__item -->
+				<div class="news__item">
+					<div class="news__img">
+						<img src="img/ofd/news/foto-3.png" alt="news foto-1">
+					</div>
+					<p class="news__date">02.03.2019</span>
+					<h3 class="news__title">Изменения в системе гражданской обороны </h3>
+					<p class="news__description">Государство планирует реализовать значительные улучшения в сфере…</p>
+				</div>
+				<!--/. news__item -->
+				<div class="news__item">
+					<div class="news__img">
+						<img src="img/ofd/news/foto-4.png" alt="news foto-1">
+					</div>
+					<p class="news__date">02.03.2019</span>
+					<h3 class="news__title">Изменения в системе гражданской обороны </h3>
+					<p class="news__description">Государство планирует реализовать значительные улучшения в сфере…</p>
+				</div>
+				<!--/. news__item -->
+			</div>
+			<!-- /.news__container _container -->
+		</div>
+
+	</div>
+	<!-- /. wrapper -->
+
+
+
+
+</body>
+
+</html>
