@@ -512,7 +512,7 @@ body {
 }
 
 .education__item:hover {
-	box-shadow: 0px 8px 25px rgba(91, 186, 240, 0.5);
+	box-shadow: 0px 8px 25px rgba(91, 185, 240, 0.822);
 }
 
 .education__item:last-child {
