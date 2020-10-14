@@ -228,10 +228,17 @@ body {
 
 .telephon:hover {
 	color: rgba(30, 30, 148, 0.705);
+	/* border-bottom: 1px solid rgba(30, 30, 148, 0.705); */
+	text-decoration: underline;
+
+	;
+
 }
 
 .email:hover {
 	color: rgba(30, 30, 148, 0.705);
+	/* outline: 1px solid rgba(30, 30, 148, 0.705); */
+	text-decoration: underline;
 }
 
 .email {
@@ -259,7 +266,8 @@ body {
 }
 
 .callback:hover {
-	background: linear-gradient(90deg, #c49242 0%, #7a401ec7 100%);
+	background: linear-gradient(90deg, #c49242 0%, #7a401e 100%);
+	box-shadow: 0px 8px 18px rgba(151, 92, 49, 0.925);
 }
 
 .header-bottom {}
@@ -294,6 +302,8 @@ body {
 
 .nav__link:hover {
 	color: rgba(30, 30, 148, 0.705);
+	text-decoration: underline;
+
 }
 
 
