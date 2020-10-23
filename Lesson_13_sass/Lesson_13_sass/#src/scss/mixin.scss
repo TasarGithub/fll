@@ -1,0 +1,9 @@
+@mixin font($fontName,$fileName,$weight,$style) {
+		font-family: $fontName;
+		src: url('../fonts/#{$fileName}.woff2') format('woff2'),
+		url('../fonts/Gilroy-Medium.woff') format('woff');
+		font-weight: $weight;
+		font-style: $style;
+		font-display: swap;
+	
+}
