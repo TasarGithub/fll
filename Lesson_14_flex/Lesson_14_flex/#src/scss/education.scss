@@ -1,0 +1,103 @@
+.education {
+	padding: 50px 0;
+}
+
+.education__container {}
+
+.education__h2 {
+	margin: 0px 0px 60px 0px;
+}
+
+.education__item {
+	display: inline-block;
+	max-width: 218px;
+	width: 100%;
+	margin: 0px 80px 0px 0px;
+
+	vertical-align: top;
+	color: inherit;
+}
+
+.education__item:hover {
+	box-shadow: 0px 8px 25px rgba(91, 185, 240, 0.822);
+}
+
+.education__item:last-child {
+	margin: 0;
+}
+
+.item-education {}
+
+.education__img {
+	position: relative;
+	max-width: 218px;
+	width: 100%;
+	height: 149px;
+	margin: 0px 0px 17px 0px;
+	font-size: 0;
+
+}
+
+.education__img:before {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(216, 216, 216, 0.286);
+
+}
+
+.education__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.education__text {
+	text-align: center;
+	padding: 0 7px 7px;
+}
+
+.education__description {
+	display: block;
+	font-weight: 800;
+	font-size: 19px;
+	line-height: 23px;
+
+
+}
+
+.education__status {
+	position: relative;
+	display: block;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #53B43B;
+	margin: 0px 0px 20px 0px;
+	padding: 0 0 0 23px;
+}
+
+.education__status::before {
+	content: "";
+	position: absolute;
+	left: 39px;
+	top: 3px;
+	left: 37px;
+	top: 2px;
+	background: url(../img/ofd/education/marker.svg) no-repeat center/cover;
+	width: 15px;
+	height: 15px;
+	z-index: 1;
+}
+
+
+.education__price {
+	display: block;
+	font-weight: 800;
+	font-size: 22px;
+	line-height: 27px;
+}

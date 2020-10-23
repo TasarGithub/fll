@@ -1,0 +1,38 @@
+@import "fonts";
+@import "mixin";
+@import "zerostyle";
+@import "techstyle";
+@import "header";
+@import "hero";
+@import "what-documents";
+@import "advantage";
+@import "education";
+@import "news.scss";
+
+
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+
+}
+
+
+
+
+
+.h2 {
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 46px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+

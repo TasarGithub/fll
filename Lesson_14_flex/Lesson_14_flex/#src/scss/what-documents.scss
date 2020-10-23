@@ -1,0 +1,52 @@
+.what-documents {
+	padding: 50px 0;
+
+	&__document {
+		margin: 0px 26px 30px 0px;
+	}
+
+	&__document:nth-child(4n+4) {
+		margin: 0px 0px 30px 0px;
+	}
+
+	&__h2 {
+		margin: 0px 0px 70px 0px;
+	}
+
+}
+
+.document {
+	display: inline-block;
+	width: 262px;
+	height: 190px;
+	padding: 30px;
+	color: inherit;
+	vertical-align: top;
+
+	&__img {
+		margin: 0px 0px 17px 0px;
+		text-align: center;
+	}
+
+	&__img img {
+		// width: 100%;
+		height: 66px;
+	}
+
+	&__text {
+		text-align: center;
+		max-width: 200px;
+		font-weight: 600;
+		font-size: 19px;
+		line-height: 23px;
+	}
+
+	&:hover {
+		box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.1);
+	}
+
+}
+
+
+
+
