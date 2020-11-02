@@ -1,34 +1,50 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
+  font-weight: "700";
+  font-style: "normal";
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"), url("../fonts/Gilroy-ExtraBold.woff") format("woff");
+  font-weight: "800";
+  font-style: "normal";
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff");
+  font-weight: "900";
+  font-style: "normal";
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: "500";
+  font-style: "normal";
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: "400";
+  font-style: "normal";
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
+  font-weight: "600";
+  font-style: "normal";
   font-display: swap;
 }
 
@@ -100,20 +116,22 @@ body {
 }
 
 .header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 0 32px 0;
 }
 
-.header__logo {
-  margin: 0px 77px 0px 0px;
-}
-
 .logo {
-  display: inline-block;
-  max-width: 390px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .logo__symbol-logo {
-  display: inline-block;
   font-weight: bold;
   font-size: 52px;
   line-height: 63px;
@@ -122,29 +140,23 @@ body {
 }
 
 .logo__vertical-line {
-  display: inline-block;
   width: 2px;
   height: 40px;
   border: 1px solid #89AFEF;
   margin: 0px 17px 0px 17px;
-  vertical-align: -60%;
 }
 
 .logo__text {
   max-width: 192px;
-  display: inline-block;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: #5D5D5D;
-  vertical-align: -40%;
 }
 
 .socnet {
-  display: inline-block;
   max-width: 165px;
   width: 100%;
-  vertical-align: -60%;
 }
 
 .socnet__item {
@@ -182,32 +194,69 @@ body {
   margin: 0;
 }
 
-.header__socnet {
-  margin: 0px 90px 0px 0px;
+.contacts {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 42px;
 }
 
-.contacts {
-  display: inline-block;
-  vertical-align: -80%;
+.contacts__telephon-email {
+  margin: 0px 24px 0px 0px;
 }
 
 .telephon-email {
-  display: inline-block;
-}
-
-.telephon-email__contacts {
-  margin: 0px 24px 0px 0px;
-  vertical-align: 43%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .telephon {
-  display: block;
-  background: url("../img/icon-telephon.svg") no-repeat left/16px;
-  padding: 3px 0 3px 25px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
   color: inherit;
+  margin: 0px 0px 0px auto;
+}
+
+.telephon::before {
+  content: "";
+  height: 16px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16px;
+          flex: 0 0 16px;
+  background: url("../img/icon_telephon.svg") no-repeat center/cover;
+  margin: 0px 0px 0px 0px;
 }
 
 .telephon:hover {
@@ -223,9 +272,13 @@ body {
 }
 
 .email {
-  display: block;
-  background: url("../img/icon-envelope.svg") no-repeat left/16px;
-  padding: 3px 0 6px 25px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0px 0px 0px 29px;
   font-weight: 500;
   font-size: 17px;
@@ -233,8 +286,17 @@ body {
   color: inherit;
 }
 
+.email::before {
+  content: "";
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 17px;
+          flex: 0 0 17px;
+  height: 17px;
+  background: url("../img/icon_envelope.svg") no-repeat;
+  margin: 0px 0px 0px 0px;
+}
+
 .callback {
-  display: inline-block;
   padding: 12px 27px 11px 27px;
   font-weight: 600;
   font-size: 18px;
@@ -246,7 +308,6 @@ body {
   -webkit-box-shadow: 0px 8px 18px rgba(242, 147, 81, 0.450503);
           box-shadow: 0px 8px 18px rgba(242, 147, 81, 0.450503);
   border-radius: 3px;
-  vertical-align: 110%;
 }
 
 .callback:hover {
@@ -639,6 +700,22 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"), url("../fonts/Gilroy-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
 }
 
 .wrapper {

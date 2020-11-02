@@ -5,22 +5,28 @@
 	transform: translateX(-50%);
 	padding: 30px 0;
 	width: 100%;
+	
+
 	&__top {
+		display: flex;
 		margin: 0 0 32px 0;
 	}
 
-	&__logo {
-		margin: 0px 77px 0px 0px;
-	}
+	// &__logo {
+		// margin: 0px 77px 0px 0px;
+	// }
+
+	// &__socnet {
+	// 	margin: 0px 90px 0px 0px;
+	// }
 }
 
-
 .logo {
-	display: inline-block;
-	max-width: 390px;
-
+	flex: 1 1 50%;
+	// max-width: 390px;
+	display: flex;
 	&__symbol-logo {
-		display: inline-block;
+
 		font-weight: bold;
 		font-size: 52px;
 		line-height: 63px;
@@ -28,35 +34,28 @@
 		color: #E1E1E1;
 	}
 	&__vertical-line {
-		display: inline-block;
+
 		width: 2px;
 		height: 40px;
 		border: 1px solid #89AFEF;
 		margin: 0px 17px 0px 17px;
-		vertical-align: -60%;
+		
 	}
 
 	&__text {
 		max-width: 192px;
-		display: inline-block;
+
 		font-weight: 500;
 		font-size: 14px;
 		line-height: 16px;
 		color: #5D5D5D;
-		vertical-align: -40%;
 	}
 
 }
 
-
-
-
-
 .socnet {
-	display: inline-block;
 	max-width: 165px;
 	width: 100%;
-	vertical-align: -60%;
 	&__item {
 		display: inline-block;
 		width: 43px;
@@ -92,38 +91,52 @@
 
 }
 
-.header__socnet {
-	margin: 0px 90px 0px 0px;
-}
-
-
-
-
 
 .contacts {
-	display: inline-block;
-	vertical-align: -80%;
+	flex: 1 1 50%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	height: 42px;
+
+	&__telephon-email {
+		margin: 0px 24px 0px 0px;
+	}
+
 }
 
 
 .telephon-email {
-	display: inline-block;
-	&__contacts {
-		margin: 0px 24px 0px 0px;
-		vertical-align: 43%;
-	}
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	align-items: flex-end;
+	
+
 }
 
 
-
 .telephon {
-	display: block;
-	background: url('../img/icon-telephon.svg') no-repeat left/16px;
-	padding: 3px 0 3px 25px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	// background: url('../img/icon-telephon.svg') no-repeat left/16px;
+	// padding: 3px 0 3px 25px;
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 24px;
 	color: inherit;
+	margin: 0px 0px 0px auto;
+	&::before{
+		content: "";
+		// width: 16px;
+		height: 16px;
+		flex: 0 0 16px;
+		background: url('../img/icon_telephon.svg') no-repeat center/cover;
+		margin: 0px 0px 0px 0px;
+	}
 }
 
 .telephon:hover {
@@ -140,18 +153,26 @@
 }
 
 .email {
-	display: block;
-	background: url('../img/icon-envelope.svg') no-repeat left/16px;
-	padding: 3px 0 6px 25px;
+	width: 100%;
+	display: flex;
+	// padding: 3px 0 6px 25px;
+	align-items: center;
 	margin: 0px 0px 0px 29px;
 	font-weight: 500;
 	font-size: 17px;
 	line-height: 20px;
 	color: inherit;
+
+	&::before{
+		content: "";
+		flex: 0 0 17px;
+		height: 17px;
+		background: url('../img/icon_envelope.svg') no-repeat;
+		margin: 0px 0px 0px 0px;
+	}
 }
 
 .callback {
-	display: inline-block;
 	padding: 12px 27px 11px 27px;
 	font-weight: 600;
 	font-size: 18px;
@@ -160,7 +181,6 @@
 	background: linear-gradient(90deg, #F6BD60 0%, #E88952 100%);
 	box-shadow: 0px 8px 18px rgba(242, 147, 81, 0.450503);
 	border-radius: 3px;
-	vertical-align: 110%;
 }
 
 .callback:hover {

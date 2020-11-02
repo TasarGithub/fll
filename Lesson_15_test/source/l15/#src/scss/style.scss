@@ -1,0 +1,144 @@
+@import "mixins";
+@import "fonts";
+@import "forms";
+
+/* Обнуляющий стиль */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+ol li,
+ul li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+	font-size: 14px;
+	line-height: 1;
+	font-family: "Gilroy";
+	color: #333333;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+@import "header";
+@import "footer";
+@import "home";
+
+/* -------------- */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+/* -------------- */
+._container {
+	max-width: 1140px;
+	margin: 0px auto;
+}
+/* -------------- */
+.page {
+	flex: 1 1 auto;
+}
+/*-------------- */
+//========================================================================================================================================================
+.title {
+	font-size: 36px;
+	line-height: 46px;
+	text-align: center;
+	font-weight: 900;
+}
+
+.social {
+	display: inline-flex;
+	// .social__item
+	&__item {
+		flex: 0 0 43px;
+		height: 43px;
+		border-radius: 50%;
+		margin: 0px 18px 0px 0px;
+		// .social__item_w
+		&_w {
+			background: #2dd038 url("../img/icons/header/whatsapp-logo.svg") center no-repeat;
+			box-shadow: 0px 8px 25px rgba(45, 208, 56, 0.497678);
+		}
+		// .social__item_v
+		&_v {
+			background: #7b519d url("../img/icons/header/viber-logo.svg") center no-repeat;
+			box-shadow: 0px 8px 25px rgba(123, 81, 157, 0.503797);
+		}
+		// .social__item_t
+		&_t {
+			background: #5bbaf0 url("../img/icons/header/telegram.svg") center no-repeat;
+			box-shadow: 0px 8px 25px rgba(91, 186, 240, 0.5);
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover {
+			background-size: 15px;
+		}
+	}
+}
+//========================================================================================================================================================
+.items-contacts {
+	display: flex;
+	flex-direction: column;
+	// .items-contacts__phone
+	&__phone {
+		font-weight: bold;
+		font-size: 20px;
+		color: #333333;
+		padding: 0px 0px 0px 25px;
+		background: url("../img/icons/header/call-answer.svg") left no-repeat;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	// .items-contacts__email
+	&__email {
+		color: #333333;
+		font-size: 17px;
+		padding: 0px 0px 0px 23px;
+		background: url("../img/icons/header/email.svg") left no-repeat;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

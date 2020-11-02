@@ -1,5 +1,5 @@
+@import "mixins";
 @import "fonts";
-@import "mixin";
 @import "zerostyle";
 @import "techstyle";
 @import "header";
@@ -10,6 +10,8 @@
 @import "news.scss";
 
 
+@include font("Gilroy", "Gilroy-Bold", 900, normal);
+@include font("Gilroy", "Gilroy-ExtraBold", 800, normal);
 
 .wrapper {
 	min-height: 100%;
